@@ -1,8 +1,16 @@
-function takeANumber(peopleInLine, personName){
+// function takeANumber(peopleInLine, personName){
   
-  peopleInLine.push(personName);
-  return `Welcome, ${personName}. You are number ${peopleInLine.length} in line.`;
+//   peopleInLine.push(personName);
+//   return `Welcome, ${personName}. You are number ${peopleInLine.length} in line.`;
+// }
+var counter = 0;
+function takeANumber(peopleInLine){
+  
+  counter++;
+  peopleInLine.push(counter);
+  return `Welcome, ${counter} in line`;
 }
+
 
 
 function nowServing(peopleInLine){
